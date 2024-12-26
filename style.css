@@ -1,0 +1,486 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.herocontainer {
+    background: #a64eee;
+    min-height: 100vh;
+    width: 100%;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+.logo{
+    width: 60px;
+}
+ul{
+    list-style:  none;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+   
+}
+.content{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.heroimg{
+    margin: auto;
+    width: 40%;
+}
+
+.heroimg img{
+    width: 600px;
+    height: 500px;
+}
+.text{
+    width: 35%;
+    margin: auto;
+}
+.text p{
+    margin: 20px 5px;
+    font-size: large;   
+}
+.subtitle{
+    font-weight: 500;
+}
+
+h2{
+    font-size: 50px;
+}
+
+#browse{
+    padding: 15px 25px;
+    border-radius: 50px;
+    margin: 15px 30%;
+    border:1px solid #a64eee; 
+}
+
+#browse:hover{
+    transform: scale(1.5);
+    border:2px solid #a64eee; 
+    background-color: #608afd;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ***************************courses********************** */
+.courses{
+    margin-top: 100px;
+}
+
+.courses .text{
+    margin-bottom: 100px;
+}
+
+.courses h2{
+    color: rgb(51, 49, 49);
+    font-weight:100 ;
+    font-size: 60px;
+    margin: 40px 0;
+}
+.coursep{
+    color: #686666;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    text-align: center;
+
+}
+
+.courseNav ul{
+    width: 90%;
+    margin: auto;
+    border-bottom: 1px solid #d1cece;
+    padding: 15px 0;
+    position: relative;
+   
+}
+.courseNav ul li{
+    display: inline-block;
+    position: relative;
+}
+.courseNav ul li a{
+    color: rgb(145, 143, 143);
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.courseNav ul li a.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px; 
+    background-color: rgb(174, 0, 255);
+    bottom: -15px; 
+    left: 0;
+}
+
+.courseNav ul li a.active {
+    color: rgb(174, 0, 255); 
+}
+
+.courseNav ul li a:hover {
+    color: rgb(174, 0, 255); 
+}
+
+/* *****************course card************************ */
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 90px;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 19rem; 
+    border: 1px solid #ddd; 
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    background-color: #f2ecf7; 
+    margin: 30px 10px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+.card:hover{
+    box-shadow: 0 0 30px rgba(171, 89, 219, 0.5);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.card-img-top {
+    width: 100%; 
+    height: 200px; 
+    display: block; 
+}
+
+.card-body {
+    padding: 1rem; 
+}
+
+.card-title {
+    font-size: 15px; 
+    margin-bottom: 2rem; 
+    color: #6c757d;
+    letter-spacing: 2px;
+}
+
+.card-text  {
+    margin-bottom: 3rem; 
+    color: #000000;
+    cursor: pointer;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.card-text:hover{
+    color: rgb(218, 111, 24);
+    transition: 0.5s;
+}
+
+.border{
+    border-top: 1px solid rgb(180, 170, 170);
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.6rem 1rem;
+
+}
+
+
+
+
+/***************************** about *********************/
+
+.about{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 5px;
+    align-items: center;
+    padding: 8rem 0px;
+    border-bottom: 1px solid #c0b7b7;
+    background-color: #f9f9f9; 
+}
+.aboutImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9; 
+    width: 42%;
+}
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+}
+.image {
+    display: block;
+    border: 10px solid white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.image-1 {
+    position: relative;
+    z-index: 1; 
+    transform: translate(-10px, -10px); 
+    height: 400px;
+    width: 400px; 
+}
+.image-2 {
+    position: absolute;
+    top: 200px; 
+    left: 200px;
+    z-index: 2; 
+    width: 300px; 
+    height: 250px;
+}
+
+.aboutContent{
+    width: 42%;
+}
+
+.aboutContent h5{
+    color: #8c00ff;
+    margin: 20px 0;
+}
+
+.aboutContent h2{
+    font-size: 40px;
+    color: #1d1c1c;
+    margin: 20px 0;
+}
+
+.aboutContent p{
+    margin: 20px 0;
+    color: #686666;
+    line-height: 30px;
+    width: 90%;
+}
+
+.aboutContent button{
+    width: 25%;
+    padding: 6px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #a64eee;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+.aboutContent button:hover{
+    background-color: #bf88ec;
+    box-shadow: 0 0 30px rgba(171, 89, 219, 0.5);
+    cursor: pointer;
+}
+
+/* ***********************Enroll Now****************** */
+
+
+.enroll {
+    position: relative;
+    width: 100%;
+    height: 300px; 
+    background: url('/img/courses/bg_2.jpg') no-repeat center center/cover; 
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(155, 74, 247, 0.5); 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.enrollcontent {
+    text-align: center;
+    color: white; 
+}
+
+.enrollcontent h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px; 
+   
+}
+
+.enrollcontent p {
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 50px; 
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3437db; 
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition:  0.3s;
+}
+
+.btn:hover {
+    background-color: #217dbb;
+    transform: scale(1.2); 
+}
+
+/* ******************instructors*********************** */
+
+.instructors{
+    margin-top: 150px;
+}
+
+.instructors .text{
+    margin-bottom: 100px;
+}
+
+.instructors h2{
+    color: rgb(27, 26, 26);
+    font-weight:100 ;
+    text-align: center;
+}
+.inp{
+    color: #686666;
+    letter-spacing: 1.5px;
+    text-align: center;
+    line-height: 30px;
+
+}
+
+
+/* *****************instructor card************************ */
+
+.inCard {
+    width: 17rem; 
+    border: none; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    background-color: #ffffff; 
+    margin: 30px 10px;
+    height: 470px;
+    display: flex;
+    flex-direction: column; 
+}
+.inCard:hover{
+    box-shadow: 0 0 30px rgba(171, 89, 219, 0.5);
+}
+.card-img {
+    width: 100%; 
+    height: 270px; 
+    display: block; 
+}
+
+.card-img:hover{
+    transform: scale(1.1);
+}
+.Name {
+    font-size: 15px; 
+    margin-bottom: 7px; 
+    color: #000000;
+    letter-spacing: 2px;
+}
+.speciality{
+    color:rgb(147, 57, 250); 
+
+}
+.incard-text  {
+    margin-top: 1rem; 
+    color: #6b6161;
+    cursor: pointer;
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin: 1rem 0;
+}
+
+
+
+/* ************************footer styles********************** */
+
+.footer {
+    background-color: #a64eee; 
+    color: #fff;
+    padding: 40px 20px;
+    font-size: 14px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    text-align: left;
+ 
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.footer-about {
+    width: 20%;
+    font-size: larger;
+}
+.footer p,
+.footer ul li a {
+    color: #ece3fc;
+    line-height: 1.8;
+}
+
+.footer ul {
+   display: block;
+   margin: auto;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+     transform: scale(1.5);
+    color: #ffffff;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #e6d9ff;
+    font-size: 13px;
+    color: #e6d9ff;
+}
